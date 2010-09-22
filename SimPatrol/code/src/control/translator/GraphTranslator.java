@@ -182,8 +182,6 @@ public abstract class GraphTranslator extends Translator {
 
 			// obtains its data
 			String id = edge_element.getAttribute("id");
-			
-			// modif attributes from source and target to source_id and target_id to match Edge.toFullXML
 			String source_id = edge_element.getAttribute("source");
 			String target_id = edge_element.getAttribute("target");
 			String str_directed = edge_element.getAttribute("directed");

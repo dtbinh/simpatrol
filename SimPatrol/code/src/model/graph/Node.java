@@ -426,7 +426,7 @@ public class Node implements XMLable, Visible {
 
 				// if the given Node is the source of the current edge,
 				// adds it to the answer
-				if (node.isSourceOf(current_edge))
+				if (isSourceOf(current_edge))
 					shared_edges.add(current_edge);
 			}
 		}
@@ -462,7 +462,7 @@ public class Node implements XMLable, Visible {
 
 				// if the given Node is the collector of the current edge,
 				// adds it to the answer
-				if(node.isTargetOf(current_edge))
+				if(isTargetOf(current_edge))
 					shared_edges.add(current_edge);
 			}
 		}

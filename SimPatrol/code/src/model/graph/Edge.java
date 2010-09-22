@@ -313,8 +313,8 @@ public class Edge implements XMLable, Visible {
 		boolean directed = !this.source.isTargetOf(this);
 
 		// fills the buffer
-		buffer.append("<edge id=\"" + this.id + "\" source=\""
-				+ this.source.getObjectId() + "\" target=\""
+		buffer.append("<edge id=\"" + this.id + "\" source_id=\""
+				+ this.source.getObjectId() + "\" target_id=\""
 				+ this.target.getObjectId() + "\" directed=\"" + directed
 				+ "\" length=\"" + this.length + "\" visibility=\""
 				+ this.visibility + "\" is_enabled=\"" + this.is_enabled
@@ -339,8 +339,8 @@ public class Edge implements XMLable, Visible {
 		boolean directed = !this.source.isTargetOf(this);
 
 		// fills the buffer
-		buffer.append("<edge id=\"" + this.id + "\" source=\""
-				+ this.source.getObjectId() + "\" target=\""
+		buffer.append("<edge id=\"" + this.id + "\" source_id=\""
+				+ this.source.getObjectId() + "\" target_id=\""
 				+ this.target.getObjectId() + "\" directed=\"" + directed
 				+ "\" length=\"" + this.length + "\"/>\n");
 
